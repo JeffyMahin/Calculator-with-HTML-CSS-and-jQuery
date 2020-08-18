@@ -24,3 +24,17 @@ function deleteNumber() {
         resultField.val(presentValue.slice(0,-1));
     }
 }
+
+function piValue() {
+    resultField.val(Math.PI.toFixed(3));
+    // Math.PI;
+}
+function eulerValue() {
+    resultField.val(Math.E.toFixed(3));
+    // Math.PI;
+}
+
+function powNumber(num1, num2) {
+
+    resultField.val(Math.pow(num1, num2));
+}
