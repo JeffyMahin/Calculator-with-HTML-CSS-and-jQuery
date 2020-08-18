@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>CALCULATOR</h1>
+    <div class="whole_body">
+        <div class="head">
+            <input type="text" id="result" maxlength="30">
+            
+        </div>
+
+        <div class="cal_body">
+            <div class="upper">
+                <div>
+                    <input type="button" class="btn" value="mc">
+                    <input type="button" class="btn" value="sin">
+                    <input type="button" class="btn" value="cos">
+                    <input type="button" class="btn" value="tan">
+                    <input type="button" class="btn" value="sin^-1">
+                    <input type="button" class="btn" value="cos^-1">
+                    <input type="button" class="btn" value="tan^-1">
+                </div>
+                <div>
+                    <input type="button" class="btn" value="m+">
+                    <input type="button" class="btn" value="sinh">
+                    <input type="button" class="btn" value="cosh">
+                    <input type="button" class="btn" value="tanh">
+                    <input type="button" class="btn" value="sinh^-1">
+                    <input type="button" class="btn" value="cosh^-1">
+                    <input type="button" class="btn" value="tanh^-1">
+                </div>
+                <div>
+                    <input type="button" class="btn" value="m-">
+                    <input type="button" class="btn" value="PI">
+                    <input type="button" class="btn" value="e">
+                    <input type="button" class="btn" value="x^n">
+                    <input type="button" class="btn" value="x^2">
+                    <input type="button" class="btn" value="x^3">
+                    <input type="button" class="btn" value="x^1">
+                </div>
+                <div>
+                    <input type="button" class="btn" value="mr">
+                    <input type="button" class="btn" value="log">
+                    <input type="button" class="btn" value="ln">
+                    <input type="button" class="btn" value="log2">
+                    <input type="button" class="btn" value="x!">
+                    <input type="button" class="btn" value="√x">
+                    <input type="button" class="btn" value="∛x">
+                </div>
+
+            </div>
+
+            <div class="lower">
+                <div>
+                    <input type="button" class="btn" value="mc">
+                    <input type="button" class="btn" value="7" onclick="insertNumber(7)">
+                    <input type="button" class="btn" value="8" onclick="insertNumber(8)">
+                    <input type="button" class="btn" value="9" onclick="insertNumber(9)">
+                    <input type="button" class="btn btn-style2" value="C" onclick="clearResult()">
+                    <input type="button" class="btn btn-style" value="DEL" onclick="deleteNumber()">
+                </div>
+                <div>
+                    <input type="button" class="btn btn-style" value="%">
+                    <input type="button" class="btn" value="4" onclick="insertNumber(4)">
+                    <input type="button" class="btn" value="5" onclick="insertNumber(5)">
+                    <input type="button" class="btn" value="6" onclick="insertNumber(6)">
+                    <input type="button" class="btn btn-style" value="X" onclick="insertNumber('*')">
+                    <input type="button" class="btn btn-style" value="/" onclick="insertNumber('/')">
+
+                </div>
+                <div>
+                    <input type="button" class="btn" value="(">
+                    <input type="button" class="btn" value="1" onclick="insertNumber(1)">
+                    <input type="button" class="btn" value="2" onclick="insertNumber(2)">
+                    <input type="button" class="btn" value="3" onclick="insertNumber(3)">
+                    <input type="button" class="btn btn-style" value="-" onclick="insertNumber('-')">
+                    <input type="button" class="btn btn-style" value="+" onclick="insertNumber('+')">
+
+
+                </div>
+                <div>
+                    <input type="button" class="btn" value=")">
+                    <input type="button" class="btn" value="+/-">
+                    <input type="button" class="btn" value="0" onclick="insertNumber(0)">
+                    <input type="button" class="btn" value="." onclick="insertNumber('.')">
+                    <input type="button" class="btn btn-style2" value="OFF" onclick="clearResult()">
+
+                    <input type="button" class="btn btn-style3" value="=" onclick="evalResult()">
+
+
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+        
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="cal.js"></script>
+
+</body>
+
+</html>
